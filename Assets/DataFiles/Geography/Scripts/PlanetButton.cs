@@ -25,7 +25,7 @@ public class PlanetButton : MonoBehaviour
 
     public void backbtn()
     {
-        SceneManager.LoadScene("HomeScene");
+        SceneManager.LoadScene("Planets");
     }
 
     public void restartbtn()
