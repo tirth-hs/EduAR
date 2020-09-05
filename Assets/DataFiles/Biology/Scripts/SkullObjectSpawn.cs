@@ -71,8 +71,6 @@ public class SkullObjectSpawn : MonoBehaviour
     {
         raycastManager = GetComponent<ARRaycastManager>();
         scaleSlider.onValueChanged.AddListener(ScaleChanged);
-        label = m_PlacedPrefab.transform.Find("Labelling").gameObject;
-        label.SetActive(false);
     }
 
     private void ScaleChanged(float newValue)
@@ -189,13 +187,13 @@ public class SkullObjectSpawn : MonoBehaviour
             anim = spawnedObject.GetComponentInChildren<Animation>();   
         }
         string detectionMessage = "";
+        label = spawnedObject.transform.Find("Labelling").gameObject;
         animPlayed=!animPlayed;
         if(animPlayed==true)
         {
             detectionMessage = "Disbale Animation";
             // anim.Rewind();
 			
-            
             StartCoroutine(waitAnim());
 			// anim["Take 001"].time = anim["Take 001"].length;
         } 

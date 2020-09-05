@@ -99,6 +99,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Labelling
       objectReference: {fileID: 0}
+    - target: {fileID: 8670492003964552596, guid: 7893e732866dc4ac1ac013c46c5a9ce7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7893e732866dc4ac1ac013c46c5a9ce7, type: 3}
 --- !u!4 &1114968349806642767 stripped
