@@ -225,5 +225,9 @@ public class SpawnObject : MonoBehaviour
         }
         
     }
+    public void backbtn()
+    {
+        SceneManager.LoadScene("BioHome");
+    }
 
 }

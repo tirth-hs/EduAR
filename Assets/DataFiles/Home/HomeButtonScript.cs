@@ -40,7 +40,7 @@ public class HomeButtonScript : MonoBehaviour
     }
     public void Biology()
     {
-        SceneManager.LoadScene("SelectionScene");
+        SceneManager.LoadScene("BioHome");
     }
     public void Geography()
     {
