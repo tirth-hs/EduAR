@@ -20,6 +20,7 @@ public class SkullObjectSpawn : MonoBehaviour
     private int placedPrefabCount=0;
     private bool animPlayed=false;
     private Animation anim;
+    private GameObject label;
 
     [SerializeField]
     private int maxPrefabSpawnCount = 0;
@@ -169,10 +170,26 @@ public class SkullObjectSpawn : MonoBehaviour
         SceneManager.LoadScene("SelectionScene");
     }
 
+    IEnumerator waitAnim()
+    {
+        anim["Take 001"].speed = 1;
+        anim.Play();
+        yield return new WaitForSeconds(4);
+            if(label!=null)
+        {
+            label.SetActive(true);
+        }
+    }  
+
     public void playAnim(){
         if(anim==null)
         {
             anim = spawnedObject.GetComponentInChildren<Animation>();
+            label = spawnedObject.transform.Find("Labelling").gameObject;
+            if(label!=null)
+            {
+                label.SetActive(false);
+            }     
         }
         string detectionMessage = "";
         animPlayed=!animPlayed;
@@ -181,8 +198,8 @@ public class SkullObjectSpawn : MonoBehaviour
             detectionMessage = "Disbale Animation";
             // anim.Rewind();
 			
-            anim["Take 001"].speed = 1;
-            anim.Play();
+            
+            StartCoroutine(waitAnim());
 			// anim["Take 001"].time = anim["Take 001"].length;
         } 
         else
@@ -191,6 +208,10 @@ public class SkullObjectSpawn : MonoBehaviour
             anim["Take 001"].speed = -1;
 			// anim["Take 001"].time = anim["Take 001"].length;
 			anim.Play("Take 001");
+            if(label!=null)
+            {
+                label.SetActive(false);
+            }
         }   
         if (toggleEnableAnimText!=null)
         {

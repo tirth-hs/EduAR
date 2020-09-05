@@ -152,11 +152,11 @@ public class SpawnObject : MonoBehaviour
                 {
                     label.SetActive(false);
                 }
-                // placedPrefabList.Add(spawnedObject);
-                placedPrefabCount++;
                 SliderParent.SetActive(true);
                 DescriptionButton.SetActive(true);
                 SpecialButton.SetActive(true);
+                // placedPrefabList.Add(spawnedObject);
+                placedPrefabCount++;
             }
             else
             {
