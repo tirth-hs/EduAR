@@ -12,7 +12,7 @@ public class GoToScene : MonoBehaviour
 {
     public void backbtn()
     {
-        SceneManager.LoadScene("ExplorePlanets");
+        SceneManager.LoadScene("StartSCreen");
     }
     public void beach()
     {
@@ -25,6 +25,10 @@ public class GoToScene : MonoBehaviour
     public void northenlights()
     {
         SceneManager.LoadScene("NorthernLights");
+    }
+    public void scenebackbtn()
+    {
+        SceneManager.LoadScene("ChoosePortal");
     }
 
 }

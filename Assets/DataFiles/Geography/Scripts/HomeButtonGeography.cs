@@ -12,7 +12,7 @@ public class HomeButtonGeography : MonoBehaviour
 {
     public void backbtn()
     {
-        SceneManager.LoadScene("ExplorePlanets");
+        SceneManager.LoadScene("StartSCreen");
     }
     public void planets()
     {

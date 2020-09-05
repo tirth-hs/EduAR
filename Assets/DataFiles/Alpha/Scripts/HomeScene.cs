@@ -19,7 +19,6 @@ public class HomeScene : MonoBehaviour
    
     public void backbtn()
     {
-        Application.Quit();
-        Debug.Log("Back button pressed");
+        SceneManager.LoadScene("StartSCreen");
     }
 }

@@ -36,7 +36,7 @@ public class HomeButtonScript : MonoBehaviour
     }
     public void Alpha()
     {
-        SceneManager.LoadScene("BeachScene");
+        SceneManager.LoadScene("HomeScene");
     }
     public void Biology()
     {
@@ -44,11 +44,11 @@ public class HomeButtonScript : MonoBehaviour
     }
     public void Geography()
     {
-        SceneManager.LoadScene("NorthernLights");
+        SceneManager.LoadScene("GeographyHome");
     }
      public void Portal()
     {
-        SceneManager.LoadScene("NorthernLights");
+        SceneManager.LoadScene("ChoosePortal");
     }
 
 }
