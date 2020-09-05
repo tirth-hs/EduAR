@@ -35,12 +35,12 @@ namespace UnityEngine.XR.ARFoundation.Samples
             string planeDetectionMessage = "";
             if (m_ARPlaneManager.enabled)
             {
-                planeDetectionMessage = "Disable Plane Detection and Hide Existing";
+                planeDetectionMessage = "Disable Plane";
                 SetAllPlanesActive(true);
             }
             else
             {
-                planeDetectionMessage = "Enable Plane Detection and Show Existing";
+                planeDetectionMessage = "Enable Plane";
                 SetAllPlanesActive(false);
             }
 
