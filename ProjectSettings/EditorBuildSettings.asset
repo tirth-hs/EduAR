@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/DataFiles/Biology/Scenes/SelectionScene.unity
-    guid: fde704d39df194682b289dffb5dd4359
-  - enabled: 0
     path: Assets/DataFiles/Home/StartSCreen.unity
     guid: f8391856e6198421fa2fddfee0041c6d
   - enabled: 1
@@ -27,23 +24,26 @@ EditorBuildSettings:
     path: Assets/DataFiles/Alpha/Scenes/QuizScene.unity
     guid: 644d5607d19e5403bb09d8db3c2090bd
   - enabled: 1
-    path: Assets/DataFiles/Geography/Scenes/Planets.unity
-    guid: 35ca20d89c8c44397af8cba9ce0a20a2
+    path: Assets/DataFiles/Biology/Scenes/SelectionScene.unity
+    guid: fde704d39df194682b289dffb5dd4359
+  - enabled: 1
+    path: Assets/DataFiles/Biology/Scenes/SkullScene.unity
+    guid: 929af528dbc9c4e98bb811560d8b38bf
   - enabled: 1
     path: Assets/DataFiles/Geography/Scenes/GeographyHome.unity
     guid: d6c2fb70907ff487e81dff393c52ec46
   - enabled: 1
-    path: Assets/DataFiles/Geography/Scenes/ExplorePlanets.unity
-    guid: 4621469f6177e4092988f4b8932be050
-  - enabled: 0
-    path: Assets/DataFiles/Geography/Scenes/Mars.unity
-    guid: 16f14a69e14694275ad9608649dd6b49
-  - enabled: 0
-    path: Assets/DataFiles/Geography/Scenes/Earth.unity
-    guid: 30274f6d074b447a9b36111dd4c3abee
-  - enabled: 0
     path: Assets/DataFiles/Geography/Scenes/Planets.unity
     guid: 35ca20d89c8c44397af8cba9ce0a20a2
+  - enabled: 1
+    path: Assets/DataFiles/Geography/Scenes/ExplorePlanets.unity
+    guid: 4621469f6177e4092988f4b8932be050
+  - enabled: 1
+    path: Assets/DataFiles/Geography/Scenes/Earth.unity
+    guid: 30274f6d074b447a9b36111dd4c3abee
+  - enabled: 1
+    path: Assets/DataFiles/Geography/Scenes/Mars.unity
+    guid: 16f14a69e14694275ad9608649dd6b49
   - enabled: 1
     path: Assets/DataFiles/Portal/Scenes/ChoosePortal.unity
     guid: 9ad2a247224564ab7a898369435b1182
@@ -51,14 +51,11 @@ EditorBuildSettings:
     path: Assets/DataFiles/Portal/Scenes/BeachScene.unity
     guid: b6bc4832737ac4994b408553ae45f5c0
   - enabled: 1
-    path: Assets/DataFiles/Portal/Scenes/UnderwaterScene.unity
-    guid: 51c10f0f07cd64eefafd904b518fbfc5
-  - enabled: 1
     path: Assets/DataFiles/Portal/Scenes/NorthernLights.unity
     guid: 5153a0e546ba041e3bdb6c93b23d52e2
-  - enabled: 0
-    path: Assets/DataFiles/Biology/Scenes/SkullScene.unity
-    guid: 929af528dbc9c4e98bb811560d8b38bf
+  - enabled: 1
+    path: Assets/DataFiles/Portal/Scenes/UnderwaterScene.unity
+    guid: 51c10f0f07cd64eefafd904b518fbfc5
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}

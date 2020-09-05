@@ -166,7 +166,7 @@ public class SkullObjectSpawn : MonoBehaviour
     }
 
     public void backbtn(){
-        SceneManager.LoadScene("TestScene");
+        SceneManager.LoadScene("SelectionScene");
     }
 
     public void playAnim(){
