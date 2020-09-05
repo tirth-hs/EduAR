@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1074,7 +1074,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 282840813}
-  placeablePrefab: {fileID: 6110511040099312179, guid: afc5be1129dc7473bb625991ba2ac40d,
+  placeablePrefab1: {fileID: 6110511040099312179, guid: afc5be1129dc7473bb625991ba2ac40d,
+    type: 3}
+  placeablePrefab2: {fileID: 5672996112435283818, guid: f7949cccb70cb4428a47f9cab78b1d42,
     type: 3}
   scaleSlider: {fileID: 1610860132}
   applyScalingPerObject: 1

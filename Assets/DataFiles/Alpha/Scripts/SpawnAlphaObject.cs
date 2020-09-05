@@ -12,13 +12,16 @@ public class SpawnAlphaObject : MonoBehaviour
    
 
     private ARRaycastManager raycastManager;
-    private GameObject spawnedObject;
+    private GameObject spawnedObject1;
+    private GameObject spawnedObject2;
 
     [SerializeField]
     private Camera arCamera;
     
     [SerializeField]
-    private GameObject placeablePrefab;
+    private GameObject placeablePrefab1;
+    [SerializeField]
+    private GameObject placeablePrefab2;
 
     [SerializeField]
     private Slider scaleSlider;
@@ -42,9 +45,10 @@ public class SpawnAlphaObject : MonoBehaviour
     private void ScaleChanged(float newValue)
     {
         if(applyScalingPerObject){
-            if(spawnedObject != null)
+            if(spawnedObject1 != null)
             {
-                spawnedObject.transform.localScale = Vector3.one * newValue;
+                spawnedObject1.transform.localScale = Vector3.one * newValue;
+                spawnedObject2.transform.localScale = Vector3.one * newValue;
             }
         }
         else 
@@ -81,14 +85,17 @@ public class SpawnAlphaObject : MonoBehaviour
         if (raycastManager.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon))
         {
         var hitPose = s_Hits[0].pose;
-        if(spawnedObject == null)
+        if(spawnedObject1 == null)
         {
-            spawnedObject = Instantiate(placeablePrefab, hitPose.position, hitPose.rotation);
+            spawnedObject1 = Instantiate(placeablePrefab1, hitPose.position, hitPose.rotation);
+            spawnedObject2 = Instantiate(placeablePrefab2, hitPose.position, hitPose.rotation);
         }
         else
         {
-            spawnedObject.transform.position = hitPose.position;
-            spawnedObject.transform.rotation = hitPose.rotation;
+            spawnedObject1.transform.position = hitPose.position;
+            spawnedObject1.transform.rotation = hitPose.rotation;
+            spawnedObject2.transform.position = hitPose.position;
+            spawnedObject2.transform.rotation = hitPose.rotation;
         }            
         }
     }
