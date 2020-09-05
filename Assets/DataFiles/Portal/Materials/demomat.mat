@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 360VideoMat
-  m_Shader: {fileID: 4800000, guid: 11fd9e57b6c7f4c19bc104f0fcdd6abd, type: 3}
+  m_Name: demomat
+  m_Shader: {fileID: 4800000, guid: 5f66e701fb0b94adaa118378c4bfb70c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0

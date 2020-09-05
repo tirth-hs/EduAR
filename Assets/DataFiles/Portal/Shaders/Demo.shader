@@ -5,7 +5,7 @@
 // - no lightmap support
 // - no per-material color
 
-Shader "Portal/360Video" {
+Shader "Portal/Demo" {
 Properties {
     _MainTex ("Base (RGB)", 2D) = "white" {}
     [Enum(Equal,3,NotEqual,6)] stest ("STENCILTEST", int) = 3
@@ -16,7 +16,7 @@ SubShader {
     LOD 100
     Cull Front
 
-    Stencil
+      Stencil
 	{
 	Ref 1
 	Comp [stest]
