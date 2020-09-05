@@ -20,7 +20,7 @@ public class PlanetInfo : MonoBehaviour
     }
     public void exploreBackbtn()
     {
-        SceneManager.LoadScene("Planets");
+        SceneManager.LoadScene("GeographyHome");
     }
     public void mars()
     {
