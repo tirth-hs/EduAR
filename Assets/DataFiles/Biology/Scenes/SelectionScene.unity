@@ -626,7 +626,7 @@ RectTransform:
   m_Children:
   - {fileID: 732477090}
   m_Father: {fileID: 948874508}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
@@ -675,7 +675,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 603070075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1335839538}
+        m_TargetAssemblyTypeName: SpawnObject, Assembly-CSharp
+        m_MethodName: DisplayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &603070075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,8 +1704,8 @@ RectTransform:
   - {fileID: 751236816}
   - {fileID: 1952630730}
   - {fileID: 1178211961}
-  - {fileID: 603070073}
   - {fileID: 1658065237}
+  - {fileID: 603070073}
   - {fileID: 616489288}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -1867,7 +1879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 200, y: 90}
+  m_AnchoredPosition: {x: 1, y: 90}
   m_SizeDelta: {x: 200, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1178211962
@@ -1918,7 +1930,7 @@ MonoBehaviour:
         m_MethodName: SetPrefabType
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 5193745695512151825, guid: f8cecdbeb0a024b7590177912def9141,
+          m_ObjectArgument: {fileID: 614792370407682607, guid: e3dfc593ae10648c5bafbe1e1e649b5f,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
@@ -2140,6 +2152,9 @@ MonoBehaviour:
   scaleSlider: {fileID: 1610860132}
   applyScalingPerObject: 1
   scaleTextValue: {fileID: 0}
+  toggleDisplayText: {fileID: 732477091}
+  DescriptionButton: {fileID: 603070072}
+  SpecialButton: {fileID: 616489287}
 --- !u!114 &1335839539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2557,7 +2572,7 @@ RectTransform:
   m_Children:
   - {fileID: 1610860131}
   m_Father: {fileID: 948874508}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3147,7 +3162,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 90}
+  m_AnchoredPosition: {x: 199, y: 90}
   m_SizeDelta: {x: 200, y: 90}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1952630731

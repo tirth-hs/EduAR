@@ -19,6 +19,9 @@ public class SpawnObject : MonoBehaviour
     private Vector2 touchPosition =default;
     private bool onTouchHold = false;
     private int placedPrefabCount=0;
+    private GameObject label;
+    private bool displayText=false;
+    
 
     [SerializeField]
     private int maxPrefabSpawnCount = 0;
@@ -41,6 +44,15 @@ public class SpawnObject : MonoBehaviour
     [SerializeField]
     private Text scaleTextValue;
 
+    [SerializeField]
+    private Text toggleDisplayText;
+
+    [SerializeField]
+    private GameObject DescriptionButton;
+
+    [SerializeField]
+    private GameObject SpecialButton;
+
     private ARSessionOrigin aRSessionOrigin;
 
     static List<ARRaycastHit> s_Hits = new List<ARRaycastHit>();
@@ -48,6 +60,8 @@ public class SpawnObject : MonoBehaviour
     void Start()
     {
         SliderParent.SetActive(false);
+        DescriptionButton.SetActive(false);
+        SpecialButton.SetActive(false);
     }
 
     private void Awake()
@@ -133,10 +147,16 @@ public class SpawnObject : MonoBehaviour
             {
                 
                 spawnedObject = Instantiate(placeablePrefab, hitPose.position, hitPose.rotation);
-                
+                label = spawnedObject.transform.Find("Labelling").gameObject;
+                if (label!=null)
+                {
+                    label.SetActive(false);
+                }
                 // placedPrefabList.Add(spawnedObject);
                 placedPrefabCount++;
                 SliderParent.SetActive(true);
+                DescriptionButton.SetActive(true);
+                SpecialButton.SetActive(true);
             }
             else
             {
@@ -144,8 +164,15 @@ public class SpawnObject : MonoBehaviour
                 {
                     Destroy(spawnedObject);
                     spawnedObject = Instantiate(placeablePrefab, hitPose.position, hitPose.rotation);
-                    
+                    // spawnedObject.transform.GetChild(1).gameObject.SetActive(false);
+                    label = spawnedObject.transform.Find("Labelling").gameObject;
                     SliderParent.SetActive(true);
+                    DescriptionButton.SetActive(true);
+                    SpecialButton.SetActive(true);
+                    if (label!=null)
+                    {
+                        label.SetActive(false);
+                    }
                 }
                 else
                 {
@@ -164,12 +191,39 @@ public class SpawnObject : MonoBehaviour
     public void SetPrefabType(GameObject prefabType)
     {
         SliderParent.SetActive(false);
+        DescriptionButton.SetActive(false);
+        SpecialButton.SetActive(false);
         placeablePrefab = prefabType;
     }
 
     public void ChangeScene()
     {
         SceneManager.LoadScene("SkullScene");
+    }
+
+    public void DisplayButton()
+    {
+        string detectionMessage = "";
+        
+        if (label!=null)
+        {
+            displayText = !displayText;
+            if(displayText==true)
+            {
+                detectionMessage = "Hide Parts";
+                label.SetActive(true);
+            } 
+            else
+            {
+                detectionMessage = "Show Parts";
+                label.SetActive(false);
+            }   
+            if (toggleDisplayText!=null)
+            {
+                toggleDisplayText.text = detectionMessage;
+            }
+        }
+        
     }
 
 }

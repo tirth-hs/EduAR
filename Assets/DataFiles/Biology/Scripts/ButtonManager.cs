@@ -6,39 +6,68 @@ using UnityEngine.UI;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject spawnedObject;
-    public Text toggleEnableAnimText;
-    private Animation anim;
-    private bool animPlayed=false;
+    public Text toggleDisplayText;
+    private bool displayText=false;
+    private GameObject label;
+
+    // private Animation anim;
+    // private bool animPlayed=false;
     void Start()
     {
-        anim = spawnedObject.GetComponent<Animation>();
+        // anim = spawnedObject.GetComponent<Animation>();
+        label = spawnedObject.transform.Find("Labelling").gameObject;
+        label.SetActive(false);
     }
-    public void playAnim(){
+    // public void playAnim(){
 
-        string detectionMessage = "";
-        animPlayed=!animPlayed;
-        if(animPlayed==true)
-        {
-            detectionMessage = "Disbale Animation";
-            // anim.Rewind();
+    //     string detectionMessage = "";
+    //     animPlayed=!animPlayed;
+    //     if(animPlayed==true)
+    //     {
+    //         detectionMessage = "Disbale Animation";
+    //         // anim.Rewind();
 			
-            anim["Take 001"].speed = 1;
-            anim.Play();
-			// anim["Take 001"].time = anim["Take 001"].length;
-        } 
-        else
-        {
-            Debug.Log(anim.name);
-            Debug.Log("Enable");
+    //         anim["Take 001"].speed = 1;
+    //         anim.Play();
+	// 		// anim["Take 001"].time = anim["Take 001"].length;
+    //     } 
+    //     else
+    //     {
+    //         Debug.Log(anim.name);
+    //         Debug.Log("Enable");
       
-            detectionMessage = "Enable Animation";
-            anim["Take 001"].speed = -1;
-			// anim["Take 001"].time = anim["Take 001"].length;
-			anim.Play("Take 001");
-        }   
-        if (toggleEnableAnimText!=null)
+    //         detectionMessage = "Enable Animation";
+    //         anim["Take 001"].speed = -1;
+	// 		// anim["Take 001"].time = anim["Take 001"].length;
+	// 		anim.Play("Take 001");
+    //     }   
+    //     if (toggleEnableAnimText!=null)
+    //     {
+    //         toggleEnableAnimText.text = detectionMessage;
+    //     }
+    // }
+
+    public void DisplayButton(){
+        string detectionMessage = "";
+        
+        if (label!=null)
         {
-            toggleEnableAnimText.text = detectionMessage;
+            displayText = !displayText;
+            if(displayText==true)
+            {
+                detectionMessage = "Hide Parts";
+                label.SetActive(true);
+            } 
+            else
+            {
+                detectionMessage = "Show Parts";
+                label.SetActive(false);
+            }   
+            if (toggleDisplayText!=null)
+            {
+                toggleDisplayText.text = detectionMessage;
+            }
         }
+       
     }
 }
