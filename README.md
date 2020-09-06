@@ -36,6 +36,44 @@ Teachers will be able to use the features of Augmented Reality to facilitate the
 
 Children and students can explore different places from their room itself to relax and take their mind off through an Augmented Portal.
 
+<p align="center">
+<b>Home Screen</>
+</p>
+<p align="center">
+    <img src="images/1.jpeg" alt="Home">
+</p>
+<p align="center">
+<b>Viewing the object respective to the letter selected</>
+</p>
+<p align="center">
+    <img src="images/2.jpeg" alt="Lion">
+</p>
+<p align="center">
+<b>Interactive Teaching using EduAR</>
+</p>
+<p align="center">
+    <img src="images/3.jpeg" alt="Teaching">
+</p>
+<p align="center">
+<b>Learning about parts of skull through self-learning</>
+</p>
+<p align="center">
+    <img src="images/4.jpeg" alt="Skull">
+</p>
+<p align="center">
+<b>Learn about planets in geography</>
+</p>
+<p align="center">
+    <img src="images/5.jpeg" alt="Mars">
+</p>
+<p align="center">
+<b>Relax your mind with the AR Portal</>
+</p>
+<p align="center">
+    <img src="images/6.jpeg" alt="Portal">
+</p>
+
+
 
 ### Built With
 
