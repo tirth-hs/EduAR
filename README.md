@@ -70,7 +70,7 @@ Children and students can explore different places from their room itself to rel
 <b>Relax your mind with the AR Portal</>
 </p>
 <p align="center">
-    <img src="images/6.jpeg" alt="Portal">
+    <img src="images/6.png" alt="Portal">
 </p>
 
 
