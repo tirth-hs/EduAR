@@ -8,8 +8,8 @@
   <p align="center">
     Experience the fun in learning
     <br />
-    <a href="">View Demo</a><br />
-    <a href="https://docs.google.com/presentation/d/1cE6vPIyj1roCPwo7KK9navJS8EAkjY-QUDmJN2k4mEg/edit?usp=sharing">View Presentation</a>
+    <a href="https://www.youtube.com/watch?v=q8uJUzBZhGY&feature=youtu.be">Link to Demo</a><br />
+    <a href="https://docs.google.com/presentation/d/1cE6vPIyj1roCPwo7KK9navJS8EAkjY-QUDmJN2k4mEg/edit?usp=sharing">Link to Presentation</a>
   </p>
 </p>
 
@@ -81,4 +81,7 @@ git clone https://github.com/tirth-hs/Eduthon-EduAR.git
 
 1. Download the APK file: https://drive.google.com/file/d/1sZ51Dhs-SYmSnVQlkiUK2Ik_vmCMKuQi/view?usp=sharing
 2. Install the app on your mobile phone.
+
+### Presentation Link
+Link to Presentation: https://docs.google.com/presentation/d/1cE6vPIyj1roCPwo7KK9navJS8EAkjY-QUDmJN2k4mEg/edit?usp=sharing
 
